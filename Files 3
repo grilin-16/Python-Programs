@@ -1,0 +1,22 @@
+name = input("Enter file:")
+if len(name) < 1 : name = "mbox-short.txt"
+handle = open(name)
+
+temp=dict()
+lst=[]
+
+for line in handle:
+    line=line.rstrip()
+    #words=line.split()
+    if not line.startswith('From '):
+        continue
+    words=line.split()
+    words=words[5].split(':')
+    words=words[0]
+    temp[words]=temp.get(words,0)+1
+    
+for a,b in temp.items():
+    lst.append((a,b))
+lst.sort()
+for a,b in lst:
+    print(a,b)
