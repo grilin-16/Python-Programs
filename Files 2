@@ -1,0 +1,21 @@
+name = input("Enter file:")
+if len(name) < 1 : name = "mbox-short.txt"
+handle = open(name)
+
+sender=dict()
+for line in handle:
+    line.strip()
+    if not line.startswith('From '):
+        continue
+    text=line.split()
+    sender[text[1]]=sender.get(text[1],0)+1
+greatest=None
+mail=None
+
+for temp in sender:
+    if greatest is None:
+        largest=sender[temp]
+    if greatest < sender[temp]:
+        greatest=sender[temp]
+        mail=temp
+print(mail,greatest)
