@@ -18,5 +18,6 @@ for line in handle:
 for a,b in temp.items():
     lst.append((a,b))
 lst.sort()
+
 for a,b in lst:
     print(a,b)
