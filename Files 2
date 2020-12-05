@@ -3,6 +3,7 @@ if len(name) < 1 : name = "mbox-short.txt"
 handle = open(name)
 
 sender=dict()
+
 for line in handle:
     line.strip()
     if not line.startswith('From '):
