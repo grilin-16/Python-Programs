@@ -2,6 +2,7 @@ print('Letter's ASCII value\n" )
 
 char1=raw_input(Enter the First letter ")
 char2=raw_input(Enter the Second letter ")
+
 print(char1,'\t',ord(char1))
 print(char2,'\t',ord(char2))
 print('Difference between ASCII value of two letters : ')
