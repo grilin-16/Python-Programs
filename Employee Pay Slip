@@ -1,0 +1,10 @@
+print("\t\t\tEmployee Pay Slip")
+name=raw_input(Enter your Name: \t")
+a=float(input("Enter your basic pay "))
+b=float(input("Enter your DA "))
+c=float(input("Enter your Pension Fund "))
+def grosspay(a,b,c):
+      d=a+b+c
+      return d
+print("\n Your Grosspay is %s "%grosspay(a,b,c))
+print("\nThank You!\n")
