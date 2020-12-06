@@ -7,5 +7,6 @@ c=float(input("Enter your Pension Fund "))
 def grosspay(a,b,c):
       d=a+b+c
       return d
+
 print("\n Your Grosspay is %s "%grosspay(a,b,c))
 print("\nThank You!\n")
