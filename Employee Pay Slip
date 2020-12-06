@@ -3,6 +3,7 @@ name=raw_input(Enter your Name: \t")
 a=float(input("Enter your basic pay "))
 b=float(input("Enter your DA "))
 c=float(input("Enter your Pension Fund "))
+
 def grosspay(a,b,c):
       d=a+b+c
       return d
