@@ -1,0 +1,6 @@
+print("\nEnter the distance in meters : ")
+d=float(input())
+print("\nEnter time in seconds : ")
+t=float(input())
+speed=d/t
+[print("Speed %s"%speed,'m/s')
