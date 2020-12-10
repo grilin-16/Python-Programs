@@ -1,5 +1,5 @@
 def eval_exp(base,exp):
-    ans=base*exp
+    ans=base**exp
     return ans
     
 a=float(input("Enter the base value: "))
