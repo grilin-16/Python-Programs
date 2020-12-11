@@ -6,4 +6,5 @@ a=float(input("Enter x1 value: "))
 b=float(input("Enter y1 value: "))
 c=float(input("Enter x2 value: "))
 d=float(input("Enter y2 value: "))
+
 print("Distance between the points : %s units"%calc(a,b,c,d))
