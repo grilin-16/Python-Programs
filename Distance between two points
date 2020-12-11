@@ -1,6 +1,7 @@
 def calc(x1,y1,x2,y2):
     dist=((x2-x1)*2+(y2-y1)**2)**0.5
     return abs(dist)
+    
 a=float(input("Enter x1 value: "))
 b=float(input("Enter y1 value: "))
 c=float(input("Enter x2 value: "))
